@@ -50,13 +50,6 @@ class OnBording extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.lightBlue,
-                    radius: 8,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  CircleAvatar(
-                    backgroundColor: primary,
                     radius: 6,
                   ),
                   SizedBox(
@@ -64,7 +57,14 @@ class OnBording extends StatelessWidget {
                   ),
                   CircleAvatar(
                     backgroundColor: primary,
-                    radius: 6,
+                    radius: 4,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  CircleAvatar(
+                    backgroundColor: primary,
+                    radius: 4,
                   )
                 ],
               ),

@@ -1,14 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:location/location.dart';
 import 'package:ozys_customer/views/widgets/appBar.dart';
 import 'package:ozys_customer/views/widgets/colors.dart';
 import 'package:ozys_customer/views/widgets/custom_button.dart';
 import 'package:ozys_customer/views/widgets/custom_text_field.dart';
 import 'package:ozys_customer/views/widgets/social_button.dart';
 
-class YourAddress2 extends StatelessWidget {
-  TextEditingController street = TextEditingController();
-  TextEditingController appartment = TextEditingController();
+class YourLocation extends StatelessWidget {
+
+  LatLng _initialcameraposition = LatLng(20.5937, 78.9629);
+  GoogleMapController _controller;
+  Location _location = Location();
+
+  void _onMapCreated(GoogleMapController _cntlr)
+  {
+    _controller = _cntlr;
+    _location.onLocationChanged.listen((l) {
+      _controller.animateCamera(
+        CameraUpdate.newCameraPosition(
+          CameraPosition(target: LatLng(l.latitude, l.longitude),zoom: 15),
+        ),
+      );
+    });
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     final heding = Theme.of(context).textTheme.headline1;
@@ -16,7 +35,7 @@ class YourAddress2 extends StatelessWidget {
     return Scaffold(
       appBar: appBar(
         centerTitle: true,
-        title: "Your address",
+        title: "Your Location",
         height: 70,
         action: SizedBox(),
         leading: Icon(
@@ -31,55 +50,40 @@ class YourAddress2 extends StatelessWidget {
             margin: EdgeInsets.symmetric(horizontal: 15),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-
-
-                SizedBox(
-                  height: 20,
+                Text(
+                  'Ahmad Javed',
+                  style:
+                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
                 ),
-                Center(
-                  child: Text(
-                    'where can you client find you?',
-                    style: TextStyle(fontSize: 20),
-                    textAlign: TextAlign.center,
-                  ),
+                Text(
+                  '49,609,Montreal,65591',
+                  style: TextStyle(fontSize: 14),
+                  textAlign: TextAlign.center,
                 ),
 
                 SizedBox(
                   height: 30,
                 ),
-                Text('Street address and number'),
-                CustomTextField(
-                  obscuretext: false,
-                  txtController: street,
-                  hintText2: 'Enter Street address and number',
-                ),
 
-                Text('Apartment (optional)'),
-                CustomTextField(
-                  obscuretext: false,
-                  txtController: appartment,
-                  hintText2: 'Enter Apartment',
-                ),
 
-                Text('City'),
-                CustomTextField(
-                  obscuretext: false,
-                  txtController: appartment,
-                  hintText2: 'Enter city',
+                Container(
+                  // color: Colors.red,
+                  width: Get.width,
+                  height: Get.height/1.6,
+                  child: GoogleMap(
+                    initialCameraPosition: CameraPosition(target: _initialcameraposition),
+                    mapType: MapType.normal,
+                    onMapCreated: _onMapCreated,
+                    myLocationEnabled: true,
+                  ),
                 ),
-                Text('Zip Code'),
-                CustomTextField(
-                  obscuretext: false,
-                  txtController: appartment,
-                  hintText2: 'Enter zip code',
-                ),
-
 
 
                 SizedBox(
-                  height: Get.height/5,
+                  height: 20,
                 ),
 
 
@@ -90,12 +94,15 @@ class YourAddress2 extends StatelessWidget {
                   lableColor: Colors.white,
                   radius: 10,
                   onPress: (){
-                    Get.offNamed('/YourLocation');
+                    Get.offNamed('/BusinessHours');
                   },
                 ),
+
                 SizedBox(
                   height: 10,
                 ),
+
+
 
 
 

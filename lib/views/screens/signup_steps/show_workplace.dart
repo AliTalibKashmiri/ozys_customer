@@ -24,7 +24,7 @@ class ShowWorkPlace extends StatelessWidget {
     return Scaffold(
       appBar: appBar(
         centerTitle: true,
-        title: "Business Hours",
+        title: "Show WorkPlace",
         height: 70,
         action: SizedBox(),
         leading: Icon(
@@ -73,9 +73,7 @@ class ShowWorkPlace extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              SizedBox(
-                height: Get.height/3,
-              ),
+              Spacer(),
 
               CustomButton(
                 lable: "Continue",

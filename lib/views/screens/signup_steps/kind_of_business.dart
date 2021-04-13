@@ -1,3 +1,4 @@
+import 'package:circular_check_box/circular_check_box.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class KindOfBusinessPage extends StatelessWidget {
     return Scaffold(
       appBar: appBar(
         centerTitle: true,
-        title: "Business Hours",
+        title: "Business Type",
         height: 70,
         action: SizedBox(),
         leading: Icon(
@@ -43,12 +44,12 @@ class KindOfBusinessPage extends StatelessWidget {
               Text(
                 'What Kind Of Business Are You?',
                 style:
-                    heding.copyWith(fontSize: 22, fontWeight: FontWeight.bold),
+                    heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
               ),
 
               SizedBox(
-                height: 30,
+                height: 10,
               ),
 
               GetBuilder<KindOfBusinessController>(
@@ -68,16 +69,10 @@ class KindOfBusinessPage extends StatelessWidget {
                           }),
                     );
                   }),
-
-              // ListTile(
-              //   leading: CircularCheckBox(value: this.selected, checkColor: Colors.white  ,activeColor: Colors.green, inactiveColor: Colors.redAccent, disabledColor: Colors.grey , onChanged: (val) => this.setState(() { this.selected= !this.selected ;}) ),
-              //   title: Text("Click me"),
-              //   onTap: ()=> this.setState(() { this.selected= !this.selected ;}),
-              // ),
-
               SizedBox(
-                height: Get.height / 3,
+                height: 10,
               ),
+
 
               CustomButton(
                 lable: "Continue",
@@ -86,7 +81,7 @@ class KindOfBusinessPage extends StatelessWidget {
                 lableColor: Colors.white,
                 radius: 10,
                 onPress: () {
-                  // Get.offNamed('/YourAddress2');
+                  Get.offNamed('/YourServicesPage');
                 },
               ),
 
@@ -98,23 +93,6 @@ class KindOfBusinessPage extends StatelessWidget {
     );
   }
 
-  Widget get rectBorderWidget {
-    return DottedBorder(
-      color: Colors.grey,
-      dashPattern: [8, 6],
-      strokeWidth: 1,
-      child: Container(
-        height: Get.height / 5,
-        width: Get.width,
-        child: Center(
-            child: Icon(
-          Icons.add_circle,
-          size: 30,
-          color: Colors.grey,
-        )),
-      ),
-    );
-  }
 }
 
 class TodoTile extends StatefulWidget {
@@ -133,12 +111,12 @@ class _TodoTileState extends State<TodoTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 16, top: 16),
+      margin: EdgeInsets.only(left: 5, top: 0),
       child: Row(
         children: [
-          Checkbox(
-              activeColor: Colors.green,
-              checkColor: Colors.black,
+          CircularCheckBox(
+              activeColor: mainColor,
+              checkColor: Colors.white,
               value: isSelected,
               onChanged: (value) {
                 isSelected = value;

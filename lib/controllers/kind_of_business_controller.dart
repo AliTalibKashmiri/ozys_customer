@@ -4,16 +4,35 @@ import 'package:ozys_customer/models/kindOfbusiness.dart';
 class KindOfBusinessController extends GetxController {
   List<BusinessTypeModel> todos = [
     BusinessTypeModel(
-      title: 'BusinessTypeModel',
+      title: 'Hair Salon',
     ),
     BusinessTypeModel(
-      title: 'BusinessTypeModel',
+      title: 'Barbershop',
     ),
     BusinessTypeModel(
-      title: 'BusinessTypeModel',
+      title: 'Nail Salon',
     ),
     BusinessTypeModel(
-      title: 'BusinessTypeModel',
+      title: 'Beauty Salon',
+    ),
+    BusinessTypeModel(
+      title: 'Eyebrows and Lashes',
+    ), BusinessTypeModel(
+      title: 'Massage',
+    ), BusinessTypeModel(
+      title: 'Makeup Artist',
+    ),BusinessTypeModel(
+      title: 'Tatto Shops',
+    ),BusinessTypeModel(
+      title: 'Personal Trainer',
+    ),BusinessTypeModel(
+      title: 'Eyebrows and Lashes',
+    ),BusinessTypeModel(
+      title: 'Hair Removal',
+    ),BusinessTypeModel(
+      title: 'Wedding Makeup Artist',
+    ),BusinessTypeModel(
+      title: 'Other',
     ),
   ];
 

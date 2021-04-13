@@ -3,6 +3,9 @@ import 'package:get/get.dart';
 import 'package:ozys_customer/utils/app_theme.dart';
 import 'package:ozys_customer/views/screens/splash_screen.dart';
 
+import 'screens/bottom_nav_bar.dart';
+import 'screens/home/calendar_appoinments.dart';
+import 'screens/home/client_profile.dart';
 import 'screens/signup_steps/business_detail.dart';
 import 'screens/signup_steps/business_hours.dart';
 import 'screens/signup_steps/get_personal_info.dart';
@@ -13,6 +16,7 @@ import 'screens/signup_steps/signup_options.dart';
 import 'screens/signup_steps/your_address.dart';
 import 'screens/signup_steps/your_address2.dart';
 import 'screens/signup_steps/your_location.dart';
+import 'screens/signup_steps/your_services_page.dart';
 import 'screens/welcome.dart';
 
 class MyApp extends StatelessWidget {
@@ -35,6 +39,9 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/BusinessHours", page: () => BusinessHours()),
         GetPage(name: "/ShowWorkPlace", page: () => ShowWorkPlace()),
         GetPage(name: "/KindOfBusiness", page: () => KindOfBusinessPage()),
+        GetPage(name: "/YourServicesPage", page: () => YourServicesPage()),
+        GetPage(name: "/BottomNavBar", page: () => BottomNavBar()),
+        GetPage(name: "/CalendarAppoinmentPage", page: () => CalendarAppoinmentPage()),
       ],
     );
   }

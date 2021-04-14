@@ -24,12 +24,7 @@ class AppTheme {
         fontWeight: FontWeight.w700,
         color: Colors.black,
       ),
-      headline1: const TextStyle(
-        fontFamily: 'WorkSans',
-        fontStyle: FontStyle.normal,
-        fontWeight: FontWeight.w700,
-        color: Colors.black,
-      ),
+
     ),
   );
 }

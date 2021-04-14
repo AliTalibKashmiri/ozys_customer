@@ -1,18 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ozys_customer/utils/app_theme.dart';
-import 'package:ozys_customer/views/screens/splash_screen.dart';
+import 'package:ozys_customer/views/screens/add_Page.dart';
+import 'package:ozys_customer/views/screens/calendar_options.dart';
+import 'package:ozys_customer/views/screens/new_appointment.dart';
+import 'package:ozys_customer/views/screens/profile/account_and_settings.dart';
+import 'package:ozys_customer/views/screens/profile/settings.dart';
+import 'package:ozys_customer/views/screens/select_service.dart';
+import 'package:ozys_customer/views/screens/transaction_details.dart';
 
-import 'screens/signup_steps/business_detail.dart';
-import 'screens/signup_steps/business_hours.dart';
-import 'screens/signup_steps/get_personal_info.dart';
-import 'screens/signup_steps/kind_of_business.dart';
-import 'screens/signup_steps/message_page_for_address.dart';
-import 'screens/signup_steps/show_workplace.dart';
-import 'screens/signup_steps/signup_options.dart';
-import 'screens/signup_steps/your_address.dart';
-import 'screens/signup_steps/your_address2.dart';
-import 'screens/signup_steps/your_location.dart';
+import 'screens/client_filters.dart';
+import 'screens/profile/edit_address.dart';
+
+import 'screens/signup/business_detail.dart';
+import 'screens/signup/get_personal_info.dart';
+import 'screens/signup/message_page_for_address.dart';
+import 'screens/signup/signup_options.dart';
+import 'screens/signup/your_address.dart';
+import 'screens/signup/your_address2.dart';
+import 'screens/signup/your_location.dart';
 import 'screens/welcome.dart';
 
 class MyApp extends StatelessWidget {
@@ -21,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
     theme: theme.themeData,
-    home: SplashScreen(),
+    home: TransactionDetails(),
 
       getPages: [
         GetPage(name: "/welcome", page: () => Welcome()),
@@ -32,9 +38,10 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/YourAddress", page: () => YourAddress()),
         GetPage(name: "/YourAddress2", page: () => YourAddress2()),
         GetPage(name: "/YourLocation", page: () => YourLocation()),
-        GetPage(name: "/BusinessHours", page: () => BusinessHours()),
-        GetPage(name: "/ShowWorkPlace", page: () => ShowWorkPlace()),
-        GetPage(name: "/KindOfBusiness", page: () => KindOfBusinessPage()),
+        GetPage(name: "/AccountAndSettings", page: () => AccountAndSettings()),
+        GetPage(name: "/Settings", page: () => Settings()),
+        GetPage(name: "/SelectService", page: () => SelectService()),
+
       ],
     );
   }

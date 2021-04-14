@@ -5,11 +5,13 @@ class CustomTextField extends StatelessWidget {
   final String hintText2;
   final TextEditingController txtController;
   final bool obscuretext;
+  final TextInputType textInputType;
   const CustomTextField({
     Key key,
     @required this.txtController,
     @required this.hintText2,
     @required this.obscuretext,
+    @required this.textInputType
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -24,8 +26,11 @@ class CustomTextField extends StatelessWidget {
               child: TextFormField(
             obscureText: obscuretext,
             controller: txtController,
+
+            keyboardType: textInputType,
             decoration: InputDecoration(
               hintText: hintText2,
+
               hintStyle: TextStyle(
                 color: Color(0xffC9C9C9),
                 fontSize: 16,

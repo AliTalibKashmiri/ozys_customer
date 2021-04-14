@@ -24,7 +24,6 @@ class GetPersonalInfo extends StatelessWidget {
 
 
       ),
-
       body: SingleChildScrollView(
         child: Container(
             width: Get.width,

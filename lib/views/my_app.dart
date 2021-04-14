@@ -6,6 +6,7 @@ import 'package:ozys_customer/views/screens/splash_screen.dart';
 import 'screens/bottom_nav_bar.dart';
 import 'screens/home/calendar_appoinments.dart';
 import 'screens/home/client_profile.dart';
+import 'screens/notification.dart';
 import 'screens/signup_steps/business_detail.dart';
 import 'screens/signup_steps/business_hours.dart';
 import 'screens/signup_steps/get_personal_info.dart';
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: "/YourServicesPage", page: () => YourServicesPage()),
         GetPage(name: "/BottomNavBar", page: () => BottomNavBar()),
         GetPage(name: "/CalendarAppoinmentPage", page: () => CalendarAppoinmentPage()),
+        GetPage(name: "/NotificationPage", page: () => NotificationPage()),
       ],
     );
   }

@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:ozys_customer/views/widgets/appBar.dart';
 import 'package:ozys_customer/views/widgets/colors.dart';
 
+import '../notification.dart';
+
 class ClientPaymentHistoryPage extends StatelessWidget {
 
 
@@ -26,7 +28,16 @@ class ClientPaymentHistoryPage extends StatelessWidget {
         centerTitle: true,
         title: "Client Payment History",
         height: 70,
-        action: SizedBox(),
+        action: Row(
+          children: [
+            GestureDetector(
+                onTap: (){
+                  Get.to(NotificationPage());
+                },
+                child: Icon(Icons.notifications_active,color: Colors.grey,)),
+            SizedBox(width: 10,)
+          ],
+        ),
         leading: Icon(
           Icons.arrow_back_ios_outlined,
         ),

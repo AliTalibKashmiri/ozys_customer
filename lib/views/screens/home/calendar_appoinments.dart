@@ -7,6 +7,8 @@ import 'package:ozys_customer/views/widgets/custom_button.dart';
 import 'package:ozys_customer/views/widgets/custom_circle.dart';
 import 'package:ozys_customer/views/widgets/custom_text_field.dart';
 
+import '../notification.dart';
+
 class CalendarAppoinmentPage extends StatelessWidget {
 
   TextEditingController note = TextEditingController();
@@ -32,7 +34,11 @@ class CalendarAppoinmentPage extends StatelessWidget {
           children: [
             Icon(Icons.sticky_note_2,color: Colors.grey,),
             SizedBox(width: 10,),
-            Icon(Icons.notifications_active,color: Colors.grey,),
+            GestureDetector(
+                onTap: (){
+                  Get.to(NotificationPage());
+                },
+                child: Icon(Icons.notifications_active,color: Colors.grey,)),
             SizedBox(width: 10,)
           ],
         )),

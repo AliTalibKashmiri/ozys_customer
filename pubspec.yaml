@@ -33,7 +33,7 @@ dependencies:
   location: ^3.0.2
   dotted_border: ^1.0.7
   circular_check_box: ^1.0.4
-
+  flutter_rating_bar:
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -70,7 +70,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Monday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
 
@@ -83,20 +83,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -117,7 +117,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Tuesday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -129,7 +129,7 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
@@ -142,7 +142,7 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -171,7 +171,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Wednesday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -183,20 +183,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -217,7 +217,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Thursday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -229,20 +229,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -263,7 +263,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Friday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -275,20 +275,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -308,7 +308,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Saturday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -320,20 +320,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],
@@ -352,7 +352,7 @@ class BusinessHours extends StatelessWidget {
                 Text(
                   'Sunday',
                   style:
-                  heding.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                  heding.copyWith(fontSize: 20, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center,
                 ),
                 Row(
@@ -364,20 +364,20 @@ class BusinessHours extends StatelessWidget {
                         Text(
                           from,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(
                           width: 10,
                         ),
-                        Icon(Icons.arrow_forward,size: 20,),
+                        Icon(Icons.arrow_forward,size: 16,),
                         SizedBox(
                           width: 10,
                         ),
                         Text(
                           to,
                           style:
-                          heding.copyWith(fontSize: 20, fontWeight: FontWeight.w300),
+                          heding.copyWith(fontSize: 16, fontWeight: FontWeight.w300),
                           textAlign: TextAlign.center,
                         ),
                       ],

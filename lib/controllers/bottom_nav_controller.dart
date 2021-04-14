@@ -5,6 +5,7 @@ import 'package:ozys_customer/views/screens/home/client_appointments.dart';
 import 'package:ozys_customer/views/screens/home/client_payment_history.dart';
 import 'package:ozys_customer/views/screens/home/client_profile.dart';
 import 'package:ozys_customer/views/screens/home/payment_confirmed.dart';
+import 'package:ozys_customer/views/screens/home/sales_history.dart';
 
 
 class BottomNavController extends GetxController {
@@ -16,7 +17,7 @@ class BottomNavController extends GetxController {
 
 
       case 0:
-        currentPage = PaymentConfirmedPage();
+        currentPage = SalesHistoryPage();
         currentIndex = index;
         update();
         break;
